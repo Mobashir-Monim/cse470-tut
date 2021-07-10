@@ -76,10 +76,12 @@ body {
 
 .form-control:hover {
     background-color: #171717;
+    color: #fff !important;
 }
 
 .form-control:focus {
     background-color: #171717;
+    color: #fff !important;
 }
 
 .btn-save {
