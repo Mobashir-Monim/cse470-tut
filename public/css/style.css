@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+
+body {
+    background-color: #171717 !important;
+    color: white;
+    font-family: Nunito;
+}
+
+.bg-dark {
+    background-color: #232323 !important;
+}
+
+.hero-area {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/hero-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation-delay: 0.5s !important;
+    animation: hero-img-drop 2s ease-in-out forwards;
+    height: 0;
+    overflow: hidden;
+}
+
+@keyframes hero-img-drop {
+    from { height: 0; }
+    to { height: 60vh; }
+}
+
+.action-btn {
+    width: 50px !important;
+    height: 50px !important;
+    position: absolute;
+    right: 10px;
+    border-radius: 25px;
+    font-size: 1.5em;
+    background-color: #171717 !important;
+    transition: all 0.5s ease-in-out;
+}
+
+.action-btn:hover {
+    right: 15px;
+}
+
+.btn-add {
+    top: calc(50% - 62.5px);
+}
+
+.btn-view {
+    top: calc(50% + 12.5px);
+}
