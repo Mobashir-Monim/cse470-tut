@@ -15,3 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index']);
 Route::get('/test', [App\Http\Controllers\IndexController::class, 'test']);
+
+Route::get('/blogs', [App\Http\Controllers\BlogController::class, 'index']);
+Route::get('/create', [App\Http\Controllers\BlogController::class, 'create']);
+Route::post('/store', [App\Http\Controllers\BlogController::class, 'store']);
